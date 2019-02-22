@@ -1,0 +1,10 @@
+.Todos {
+  list-style-type: none;
+}
+
+.Todos li {
+    padding: 16px;
+    border-width: 0 0 1px 0;
+    border-color: #eee;
+    border-style: solid;
+}

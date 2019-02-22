@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "go-spa-example",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +7,7 @@
     "react-dom": "^16.8.2",
     "react-scripts": "2.1.5"
   },
+  "proxy": "http://localhost:8080",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -14,5 +14,14 @@ dev:
 clean:
 	rm app
 
+setup:
+	go get github.com/rakyll/statik
+	go get github.com/canthefason/go-watcher
+	go get github.com/mitchellh/gox
 
-.PHONY: all clean statik dev
+
+crossplatform:
+	gox -output="build/{{.Dir}}_{{.OS}}_{{.Arch}}"
+
+
+.PHONY: all clean statik dev crossplatform
